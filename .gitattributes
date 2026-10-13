@@ -1,0 +1,29 @@
+# 统一换行符：仓库内一律 LF，检出时按平台自动转换
+* text=auto
+
+# Windows 脚本必须 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 美术 / 音频 / 字体：二进制，禁止 Git 做任何文本转换或行合并
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.bmp  binary
+*.tga  binary
+*.ico  binary
+*.psd  binary
+*.aseprite binary
+*.mp3  binary
+*.ogg  binary
+*.wav  binary
+*.m4a  binary
+*.ttf  binary
+*.otf  binary
+*.woff  binary
+*.woff2 binary
+
+# Cocos 生成的资源库 / 构建产物（本应被 .gitignore 排除，这里兜底）
+*.bin binary
