@@ -1,10 +1,11 @@
 # Git 使用手册
 
-> **适用项目**：ZSQ（仓库名 `2D-`）
-> **仓库地址**：https://github.com/ZSQ77ZSQ/2D-
+> **项目名称**：Farmer Simulator（种田挂机）
+> **仓库名**：`Farmer-Simulator`
+> **仓库地址**：https://github.com/ZSQ77ZSQ/Farmer-Simulator
 > **本地目录**：`D:\My game\ZSQ`
 > **写给**：ZSQ、0tmzz0，以及以后加入的任何伙伴
-> **最后更新**：2026-10-13
+> **最后更新**：2026-10-14
 
 ---
 
@@ -120,19 +121,19 @@ git config --global core.quotepath false
 
 ```powershell
 cd "D:\My game"
-git clone https://github.com/ZSQ77ZSQ/2D-.git
+git clone https://github.com/ZSQ77ZSQ/Farmer-Simulator.git
 ```
 
-**下载完会多出一个文件夹**：`D:\My game\2D-`
+**下载完会多出一个文件夹**：`D:\My game\Farmer-Simulator`
 
-> ⚠️ 注意：`clone` 下来的文件夹叫 `2D-`，是因为仓库名就叫 `2D-`。
+> ⚠️ 注意：`clone` 下来的文件夹叫 `Farmer-Simulator`，是因为仓库名就叫 `Farmer-Simulator`。
 > ZSQ 的电脑上文件夹叫 `ZSQ`，是因为他当初是用 Cocos Dashboard 建的项目。
 > **文件夹名字不同不影响协作**，里面的内容是一样的。
 
 **下载完之后**：
 
 ```powershell
-cd "D:\My game\2D-"
+cd "D:\My game\Farmer-Simulator"
 git log --oneline
 ```
 
@@ -186,7 +187,7 @@ git config --global --list
 **光有账号不够，必须被仓库主人加为 Collaborator，否则 push 会被拒绝：**
 
 ```
-remote: Permission to ZSQ77ZSQ/2D-.git denied to xxx.
+remote: Permission to ZSQ77ZSQ/Farmer-Simulator.git denied to xxx.
 fatal: ... The requested URL returned error: 403
 ```
 
@@ -1131,7 +1132,7 @@ git config --global https.proxy http://127.0.0.1:7890
 **【报错】**
 
 ```
-remote: Permission to ZSQ77ZSQ/2D-.git denied to xxx.
+remote: Permission to ZSQ77ZSQ/Farmer-Simulator.git denied to xxx.
 fatal: ... The requested URL returned error: 403
 ```
 
@@ -1358,8 +1359,8 @@ git commit -m "说明"        # ✅ 英文引号
 
 | 项目 | 内容 |
 |---|---|
-| 仓库名 | `2D-` |
-| 仓库地址 | https://github.com/ZSQ77ZSQ/2D- |
+| 仓库名 | `Farmer-Simulator` |
+| 仓库地址 | https://github.com/ZSQ77ZSQ/Farmer-Simulator |
 | 默认分支 | `main` |
 | 可见性 | public（公开） |
 | 本地目录（ZSQ） | `D:\My game\ZSQ` |
@@ -1369,14 +1370,13 @@ git commit -m "说明"        # ✅ 英文引号
 ## 仓库目录说明
 
 ```
-2D-/
+Farmer-Simulator/
 ├── assets/                 ← 游戏资源（唯一的真相来源）
 │   ├── core/               ← 纯 TypeScript 逻辑（作物表、经济系统）
 │   ├── scenes/             ← 场景文件
 │   └── scripts/            ← 挂在节点上的脚本
 ├── docs/                   ← 文档（本文件在这里）
-│   ├── Git使用手册.md
-│   └── GIT协作指南.md
+│   └── Git使用手册.md
 ├── settings/               ← 工程设置（提交，但一般不手动改）
 ├── .gitattributes          ← 换行符和二进制文件规则
 ├── .gitignore              ← 不提交名单
@@ -1393,7 +1393,7 @@ git commit -m "说明"        # ✅ 英文引号
 
 | 名词 | 英文 | 意思 |
 |---|---|---|
-| **仓库** | Repository / Repo | 存放代码的地方。本项目仓库是 `2D-` |
+| **仓库** | Repository / Repo | 存放代码的地方。本项目仓库是 `Farmer-Simulator` |
 | **远程仓库** | Remote | GitHub 上的那一份 |
 | **本地仓库** | Local | 你电脑上的那一份 |
 | **克隆** | Clone | 第一次把远程仓库下载到本地 |
